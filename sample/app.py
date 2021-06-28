@@ -1,4 +1,7 @@
+from types import Optional
+
 import falcon
+
 from ..router import register_routes
 
 app: Optional[falcon.API] = None

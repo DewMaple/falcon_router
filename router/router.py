@@ -68,4 +68,4 @@ def register_routes(api: API):
         for uri, func, method in routes:
             _build_actions(api_proxy, func, method)
             api.add_route(uri, api_proxy, suffix=func.__name__)
-
+            
